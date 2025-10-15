@@ -8,5 +8,4 @@ services:
     envVars:
       - key: PORT
         value: 8860
-    healthCheckPath: /
     region: singapore
