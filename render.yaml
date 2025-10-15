@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: triplea-transfer-api
+    env: docker
+    plan: free
+    autoDeploy: true
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: PORT
+        value: 8860
+    healthCheckPath: /
+    region: singapore
